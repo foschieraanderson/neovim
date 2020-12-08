@@ -11,6 +11,8 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'mattn/emmet-vim'
+Plug 'bling/vim-airline'
 call plug#end()
 
 "# Theme
