@@ -5,7 +5,6 @@
 "# Instale o vim-plug
 "# https://github.com/junegunn/vim-plug
 call plug#begin()
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'scrooloose/nerdTree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'sheerun/vim-polyglot'
@@ -13,12 +12,20 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'bling/vim-airline'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'sickill/vim-monokai'
+
 call plug#end()
 
 "# Theme
 syntax enable
-colorscheme dracula
+colorscheme monokai
 set background=dark
+
+" Redefine trigger key
+let g:user_emmet_leader_key=','
 
 "# Abre/Fecha menu lateral para navegação no diretório atual
 nnoremap <C-o> :NERDTreeToggle<cr>
