@@ -8,6 +8,7 @@ call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdTree'
 Plug 'scrooloose/nerdcommenter'
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -156,7 +157,7 @@ nnoremap <C-q> :q<CR>
 nnoremap <F1> :bprevious<CR>
 nnoremap <F2> :bnext<CR>
 "# Fechar uma aba (buffer) com CTRL + W
-nnoremap <C-w> :bd<CR>
+nnoremap <leader><C-w> :bd<CR>
 "# Alternar a posição de uma linha com SHIFT + seta para cima e SHIFT + seta para baixo 
 nnoremap <silent> <s-Down> :m +1<CR>
 nnoremap <silent> <s-Up> :m -2<CR>
