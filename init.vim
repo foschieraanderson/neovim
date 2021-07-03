@@ -6,9 +6,11 @@
 "# https://github.com/junegunn/vim-plug
 call plug#begin()
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'scrooloose/nerdTree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
+Plug 'airblade/vim-gitgutter'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -41,7 +43,8 @@ call plug#end()
 
 "# Theme
 syntax enable
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme dracula
 set background=dark
 
 "# Deoplete
@@ -113,7 +116,8 @@ set inccommand=split
 "# Muda a cor da linha atual
 set cursorline
 "# Compatibilidade de cores
-set termguicolors
+"set termguicolors
+set t_Co=256
 "# Menu de comandos
 set wildmenu
 "# Destacar as buscas
